@@ -1,29 +1,15 @@
 .active {
-  color: #f5a524;
+  color: #004493;
   font-weight: 700;
-  font-size: large;
+  font-size: 1rem;
 }
 
 .notActive {
-  color: white;
-  font-size: large;
+  font-size: 1rem;
 }
 
 .notActive:hover {
-  color: #f5a524;
-}
-
-.nav {
-  font-family: "Acme";
-}
-
-.navActive::after {
-  content: "";
-  height: 0.25rem;
-  border-radius: 1rem;
-  background-color: #f5a524;
-  transform: translateY(1.75rem);
-  filter: drop-shadow(0 -0.3rem 0.4rem #f5a524);
+  color: #004493;
 }
 
 .navActiveServices::after {
@@ -31,41 +17,11 @@
   height: 0.25rem;
   border-radius: 1rem;
   transform: translate(1.25rem, 1rem) !important;
-  background-color: #f5a524;
+  background-color: #004493;
   max-width: 6rem;
-  filter: drop-shadow(0 -0.3rem 0.4rem #f5a524);
+  filter: drop-shadow(0 -0.3rem 0.4rem #004493);
 }
 
 .logo {
   justify-content: center !important;
-}
-
-.ribbon {
-  background-color: #e9ecef;
-  border: 3px solid black;
-}
-
-.slant-down {
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 50% 100%, 0 calc(100% - 30px));
-}
-
-.left-ribbon-border {
-  position: absolute;
-  height: 7px;
-  width: 100%;
-  left: -1rem;
-  rotate: 25deg;
-  background-color: black;
-  top: 15.5rem;
-}
-
-.right-ribbon-border {
-  position: absolute;
-  height: 7px;
-  width: 100%;
-  right: -1rem;
-  rotate: -25deg;
-  background-color: black;
-  top: 15.5rem;
 }

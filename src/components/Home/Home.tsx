@@ -10,7 +10,7 @@ const Home = () => {
   dispatch(updateTab("Home"));
   scrollTop();
 
-  return <div>Home</div>;
+  return <div className="bg-black">Home</div>;
 };
 
 export default Home;
