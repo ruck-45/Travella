@@ -1,5 +1,5 @@
 .active {
-  color: #004493;
+  color: #13357bff;
   font-weight: 700;
   font-size: 1rem;
 }
@@ -9,7 +9,7 @@
 }
 
 .notActive:hover {
-  color: #004493;
+  color: #13357bff;
 }
 
 .navActiveServices::after {
@@ -17,9 +17,9 @@
   height: 0.25rem;
   border-radius: 1rem;
   transform: translate(1.25rem, 1rem) !important;
-  background-color: #004493;
+  background-color: #13357bff;
   max-width: 6rem;
-  filter: drop-shadow(0 -0.3rem 0.4rem #004493);
+  filter: drop-shadow(0 -0.3rem 0.4rem #13357bff);
 }
 
 .logo {

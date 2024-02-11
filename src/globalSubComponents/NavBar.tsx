@@ -40,12 +40,12 @@ const NavBar = () => {
     >
       <NavbarContent>
         <NavbarMenuToggle aria-label={navOpenStatus ? "Close menu" : "Open menu"} className="lg:hidden" />
-        <Image width={80} src={icon} alt="logo" radius="none" className="hidden lg:block" />
+        <Image width={150} src={icon} alt="logo" radius="none" className="hidden lg:block" />
       </NavbarContent>
 
       <NavbarContent className="lg:hidden logo">
         <Link to="../Home">
-          <Image width={80} src={icon} alt="logo" radius="none" />
+          <Image width={150} src={icon} alt="logo" radius="none" />
         </Link>
       </NavbarContent>
 

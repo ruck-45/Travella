@@ -6,23 +6,16 @@ import { BsLinkedin } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
 import { BiSolidExit } from "react-icons/bi";
-import { IoMdMail } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 
 const social = [<FaXTwitter />, <FaFacebookF />, <BsLinkedin />, <AiFillInstagram />, <FaYoutube />];
 
 const TopBar = () => {
   return (
-    <div className="flex bg-[#004493] py-[0.8rem] px-[2rem] justify-between">
-      <div className="flex gap-[0.7rem]">
+    <div className="flex bg-[#13357bff] py-[0.3rem] px-[2rem] justify-between">
+      <div className="flex">
         {social.map((data, index) => (
-          <Button
-            key={index}
-            isIconOnly
-            variant="bordered"
-            radius="full"
-            className="w-[2.5rem] h-[2.5rem] text-[1.2rem] text-white"
-          >
+          <Button key={index} isIconOnly variant="light" radius="full" className="text-[1rem] text-white">
             {data}
           </Button>
         ))}
@@ -32,7 +25,7 @@ const TopBar = () => {
           variant="light"
           radius="sm"
           className="w-full px-[8px] py-[10px] text-[1rem] text-white"
-          startContent={<FaUser className="text-[2rem]" />}
+          startContent={<FaUser className="text-[1.5rem]" />}
         >
           Register
         </Button>
@@ -40,7 +33,7 @@ const TopBar = () => {
           variant="light"
           radius="sm"
           className="w-full px-[8px] py-[10px] text-[1rem] text-white"
-          startContent={<BiSolidExit className="text-[2rem]" />}
+          startContent={<BiSolidExit className="text-[1.5rem]" />}
         >
           Login
         </Button>
