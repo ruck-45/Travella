@@ -84,7 +84,7 @@ const NavBar = () => {
         <NavbarItem>
           <Link
             to="../Package"
-            className={curTab === "About" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
+            className={curTab === "Package" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
           >
             PACKAGE
           </Link>
@@ -93,7 +93,7 @@ const NavBar = () => {
         <NavbarItem>
           <Link
             to="../Blog"
-            className={curTab === "About" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
+            className={curTab === "Blog" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
           >
             BLOG
           </Link>
@@ -107,23 +107,14 @@ const NavBar = () => {
             CONTACT
           </Link>
         </NavbarItem>
-        {isLoggedIn ? (
-          <NavbarItem>
-            <UserAvatar />
-          </NavbarItem>
-        ) : (
-          <NavbarItem className="hidden lg:flex">
-            <ButtonElement
-              to="../Auth"
-              variant="light"
-              label="LOGIN"
-              radius="sm"
-              className="w-full px-[8px] py-[10px] text-[1rem]"
-              startContent={<FaUser />}
-              onClickFunction={() => dispatch(updateToLoginStatus(true))}
-            />
-          </NavbarItem>
-        )}
+        <NavbarItem className="hidden lg:flex">
+          <ButtonElement
+            to="../"
+            label="Book Now"
+            radius="full"
+            className="w-full px-[1rem] py-[10px] text-[1rem] bg-[#13357bff] text-white"
+          />
+        </NavbarItem>
       </NavbarContent>
 
       <NavbarMenu className="mt-[4.5rem] bg-white z-[200]">

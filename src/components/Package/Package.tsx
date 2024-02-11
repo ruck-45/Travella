@@ -5,12 +5,12 @@ import { useDispatch } from "react-redux";
 import { updateTab } from "../../store/curTabSlice";
 import { scrollTop } from "../../utils/controllers";
 
-const Pricing = () => {
+const Package = () => {
   const dispatch = useDispatch();
-  dispatch(updateTab("Pricing"));
+  dispatch(updateTab("Package"));
   scrollTop();
 
-  return <div>Pricing</div>;
+  return <div>Package</div>;
 };
 
-export default Pricing;
+export default Package;

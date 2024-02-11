@@ -7,7 +7,7 @@ import NavBar from "./globalSubComponents/NavBar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import Pricing from "./components/Pricing/Pricing";
+import Package from "./components/Package/Package";
 import Services from "./components/Services/Services";
 import Auth from "./components/Auth/Auth";
 import Profile from "./components/Profile/Profile";
@@ -33,7 +33,7 @@ function App() {
           <Route path="/Home" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/Pricing" element={<Pricing />} />
+          <Route path="/Package" element={<Package />} />
           <Route path="/Auth" element={<Auth />} />
           <Route path="/Services/*" element={<Services />} />
           <Route path="/Profile" element={<Profile />} />
