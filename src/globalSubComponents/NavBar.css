@@ -1,15 +1,47 @@
 .active {
-  color: #13357bff;
+  color: whitesmoke;
   font-weight: 700;
   font-size: 1rem;
+  align-self: center;
+  z-index: 20;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  background-color: #13357bff;
 }
 
 .notActive {
   font-size: 1rem;
+  z-index: 20;
+  height: 5rem;
+  display: flex;
+  align-items: center;
 }
 
-.notActive:hover {
-  color: #13357bff;
+.navListbg {
+  position: relative;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.navListbg:hover {
+  color: whitesmoke;
+  transition: 0.4s;
+}
+
+.navListbg::before {
+  content: "";
+  height: 0rem;
+  width: 100%;
+  background: #13357bff;
+  position: absolute;
+  transition: 0.4s;
+  bottom: 0;
+}
+
+.navListbg:hover::before {
+  height: 5rem;
+  transition: 0.4s;
 }
 
 .navActiveServices::after {

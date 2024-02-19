@@ -49,21 +49,17 @@ const NavBar = () => {
         </Link>
       </NavbarContent>
 
-      <NavbarContent className="lg:hidden">
-        <div className="w-[5rem] h-[100%] bg-red"></div>
-      </NavbarContent>
-
       <NavbarContent className="hidden lg:flex" justify="center">
-        <NavbarItem>
+        <NavbarItem className="h-[5rem] flex navListbg">
           <Link
             to="../Home"
             className={curTab === "Home" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
           >
-            HOME
+            <p>HOME</p>
           </Link>
         </NavbarItem>
 
-        <NavbarItem>
+        <NavbarItem className="h-[5rem] flex navListbg">
           <Link
             to="../Services"
             className={curTab === "Services" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
@@ -72,7 +68,7 @@ const NavBar = () => {
           </Link>
         </NavbarItem>
 
-        <NavbarItem>
+        <NavbarItem className="h-[5rem] flex navListbg">
           <Link
             to="../About"
             className={curTab === "About" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
@@ -81,7 +77,7 @@ const NavBar = () => {
           </Link>
         </NavbarItem>
 
-        <NavbarItem>
+        <NavbarItem className="h-[5rem] flex navListbg">
           <Link
             to="../Package"
             className={curTab === "Package" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
@@ -90,7 +86,7 @@ const NavBar = () => {
           </Link>
         </NavbarItem>
 
-        <NavbarItem>
+        <NavbarItem className="h-[5rem] flex navListbg">
           <Link
             to="../Blog"
             className={curTab === "Blog" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
@@ -99,7 +95,7 @@ const NavBar = () => {
           </Link>
         </NavbarItem>
 
-        <NavbarItem>
+        <NavbarItem className="h-[5rem] flex navListbg">
           <Link
             to="../Contact"
             className={curTab === "Contact" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
@@ -107,7 +103,7 @@ const NavBar = () => {
             CONTACT
           </Link>
         </NavbarItem>
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem className="hidden lg:flex relative">
           <ButtonElement
             to="../"
             label="Book Now"
