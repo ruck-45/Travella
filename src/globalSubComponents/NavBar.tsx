@@ -64,7 +64,7 @@ const NavBar = () => {
             to="../Services"
             className={curTab === "Services" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
           >
-            SERVICES
+            <p>SERVICES</p>
           </Link>
         </NavbarItem>
 
@@ -73,7 +73,7 @@ const NavBar = () => {
             to="../About"
             className={curTab === "About" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
           >
-            ABOUT
+            <p>ABOUT</p>
           </Link>
         </NavbarItem>
 
@@ -82,7 +82,7 @@ const NavBar = () => {
             to="../Package"
             className={curTab === "Package" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
           >
-            PACKAGE
+            <p>PACKAGE</p>
           </Link>
         </NavbarItem>
 
@@ -91,7 +91,7 @@ const NavBar = () => {
             to="../Blog"
             className={curTab === "Blog" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
           >
-            BLOG
+            <p>BLOG</p>
           </Link>
         </NavbarItem>
 
@@ -100,7 +100,7 @@ const NavBar = () => {
             to="../Contact"
             className={curTab === "Contact" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
           >
-            CONTACT
+            <p>CONTACT</p>
           </Link>
         </NavbarItem>
         <NavbarItem className="hidden lg:flex relative">
