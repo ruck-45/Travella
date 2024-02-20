@@ -47,6 +47,7 @@ function App() {
         <CTA text="❝ We Care for your Brand as Passionately as You Do. ❞" color="warning" showArrow={false} />
       )}
       {curTab === "Auth" || curTab === "Password Reset" ? null : <Footer />}
+      {curTab === "Auth" || curTab === "Password Reset" ? null : <ScrollToTop />}
     </>
   );
 }

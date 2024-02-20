@@ -10,7 +10,6 @@ import {
 } from "@nextui-org/react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { FaUser } from "react-icons/fa";
 
 // Local Files
 import "./NavBar.css";
